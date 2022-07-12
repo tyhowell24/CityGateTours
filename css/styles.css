@@ -1,0 +1,21 @@
+/*  Header Styles */
+
+.menuHeader {
+	background: #1A1A1A;
+	color: rgba(255, 26, 104, 1);
+}
+
+.menuHeader p {
+    padding: 10px;
+	font-size: 20px;
+}
+
+/* Main Content */
+
+.main {
+    background: lightgray;
+}
+
+.welcome {
+    background-color: white;
+}
