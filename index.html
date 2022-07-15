@@ -9,16 +9,45 @@
 <html>
     <head>
         <title>City Gate Tours</title>
-        <!-- CSS -->
+        
+        <!--Adjusting the page on mobile screen  -->
+  		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  		<meta charset="utf-8">
+		
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/jquery.mobile-1.3.1.min.css"/>
+		<link rel="stylesheet" href="css/bootstrap.css" />
         <link rel="stylesheet" href="css/styles.css" />
+		<!-- Scripts -->
+		<script src="scripts/jquery-1.9.1.min.js"></script>
+		<script src="scripts/chromeFileProtocolFix.js"></script>
+		<script src="scripts/jquery.mobile-1.3.1.min.js"></script>
+
     </head>
 
     <body class="main">
-        <div class="menuHeader">
-            <p align="center">City Gate Tours</p>
+        <div data-role="page" id="pageHome">
+            <div data-role="header">
+                <a href="#pageMenu" data-role="button" data-icon="bars" data-iconpos="left" data-inline="true">Menu</a>
+                <h1>City Gate Tours</h1>
+            </div>
         </div>
-        <div class="welcome">
-            <p align="center">Let us be your guide through beautiful historic St. Augustine!</p>
-        </div>
+
+        <!-- Menu Page -->
+		<div data-role="page" id="pageMenu">
+			<div data-role="header">
+      			<a href="#pageHome" data-role="button" data-icon="bars"
+      			data-iconpos="left" data-inline="true">Home</a>
+				<h1>City Gate Tours</h1>
+			</div>
+			<div data-role="content">
+				<div data-role="controlgroup">
+					<a href="#pageGate" data-role="button">City Gates</a>
+					<a href="#pageSGS" data-role="button">St. George Street</a>
+					<a href="#pageFort" data-role="button">Castillo De San Marcos</a>
+					<a href="#pageBars" data-role="button">Bars & Nightlife</a>
+				</div>
+			</div>
+		</div>
     </body>
 </html>

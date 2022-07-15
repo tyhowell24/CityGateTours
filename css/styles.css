@@ -8,6 +8,7 @@
 .menuHeader p {
     padding: 10px;
 	font-size: 20px;
+    color: rgba(255, 26, 104, 1);
 }
 
 /* Main Content */
@@ -18,4 +19,10 @@
 
 .welcome {
     background-color: white;
+}
+
+.welcomeimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
